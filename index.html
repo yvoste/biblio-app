@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <meta name="description" content="Fonctionnalités et utilisation de l'application biblioApp pour téléphone et tablettes sous android et ios. Elle permet de classer vos livres, , de vendre vos livres, de partager vos commentaires, de consulter les bibliothèques d'autres utilisateurs, d'acheter des livres d'occasion, de consulter des sites de vente, de lister vos prêts de livres, de noter des livres dans votre liste de lecture.">
+    <meta name="keywords" content="Bibliothéque, iPhone, Tablet, Android, iOS">
+    <meta name="author" content="Deusi">
+    <title>Bibliothéque Application sous Android et iOs</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,7 +24,331 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#features">              
+              <img class="logo img-responsive" src="img/mini2.png" alt="Edition" >
+              <span class="entet">biblioApp</span>
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#features">PHILOSOPHIE</a></li>
+            <li><a href="#phone">TELEPHONE</a></li>
+            <li><a href="#tablet">TABLETTE</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AIDE <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#help">AIDE</a></li>
+                <li><a href="#signin">Enregistrer</a></li>
+                <li><a href="#login">Connecter</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#biblio">Bibliothéque</a></li>
+                <li><a href="#add">Ajouter un livre</a></li>
+                <li><a href="#search">Rechercher</a></li>
+                <li><a href="#visit">Visiter</a></li>
+                <li><a href="#list">Liste de lecture</a></li>
+                <li><a href="#loaning">Liste de prêts</a></li>
+                <li><a href="#favori">Favoris</a></li>
+                <li><a href="#msg">Message</a></li>
+                <li><a href="#sub">Abonnements</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container"> 
+        <div id="features" class="jumbotron">
+            <h1>biblioApp</h1>
+            <p>Notre application est basée sur le partage de la connaissance et sur la recherche par affinités de lecture.<p><br>
+                <h2>Créez</h2>
+                    <p>Créez vos bibliothéques, classez vos livres, récupérez les images des couvertures, vendez vos livres, partagez vos commentaires personnels sur vos livres, 
+                        consultez les bibliothèques d'autres utilisateurs, voir leurs commentaires, acheter des livres d'occasion, 
+                        consulter des sites de vente, lister vos prêts de livres et noter des livres dans votre liste de lecture.</p>
+                <h2>Partagez</h2>
+                    <p>Partagez votre connaissance en commentant et notant vos lectures. Inspirez les autres et découvrez de nouveaux livres grâce aux bibliothèques des utilisateurs.
+                     Pour chaque livre vous pouvez ajouter un commentaire personnel et une note qui seront visibles par les utilisateurs 
+                        visitant votre bibliothèque et qui amélioreront votre popularité.</p>
+                <h2>Vendez</h2>
+                    <p>Vendez et achetez directement vos livres d'occasion grâce à la messagerie.<br>
+                        Vous pouvez mettre en vente chacun de vos livres en indiquant son état, son prix et la devise utilisée.</p>
+                <h2>Arrangez</h2>
+                    <p>Vous pouvez ordonner vos livres comme vous le souhaitez .<br>
+                        Vous pouvez créer et modifier autant de catégories que vous voulez, déplacer des livres d'une catégorie à l'autre, d'une bibliothèque à l'autre.
+                        La bibliothèque publique est visitable par tous les utilisateurs de l'application, la bibliothèque privée n'est visible que par vous.</p>
+                <h2>Récupérez</h2>
+                    <p>Vous pouvez saisir les données d'un livre en scannant le code ISBN ou manuellement et récupérer son titre, son auteur, son éditeur, sa couverture.</p> 
+                <h2>Visitez</h2>
+                    <p>Lorsque vous visitez une bibliothèque vous pouvez la sélectionner dans vos favoris et/ou inclure chacun de ses livres dans votre liste de lecture.
+                        Si ces ouvrages sont disponibles sur le site Amazon, un lien vous permet d'y accéder directement. 
+                        Si le propriétaire de la bibliothèque visitée a mis en vente des livres, un bouton vous permet de mettre le livre qui vous intéresse dans l'onglet messages.</p>
+                    <p>Plusieurs critères de recherche sont disponibles à cet effet :<br>	
+                    <h4>- La note de popularité qui dépend, par ordre décroissant</h4>
+                        <h5>1 - du nombre de vos livres que vous avez notés et du nombre de commentaires de lecture que vous écrivez.</h5>
+                        <h5>2 - du nombre de visites de votre bibliothèque par d'autres utilisateurs et du nombre de fois où elle est sélectionnée dans leurs favoris.</h5>
+                        <h5>3 - du nombre de livres qui apparaissent dans votre bibliothèque publique.</h5>
+                    <h4>- Le nombre de livres en commun entre votre bibliothèque publique et celle d'un autre utilisateur.</h4>
+                    <h4>- La sélection d'un attribut spécifique.</h4>
+                    <p>Exemple: vous avez saisi un livre que vous avez classé avec l'attribut "Nouvelles", 
+                        un utilisateur effectuant une visite avec le même critère de tri attribut "Nouvelles " verra votre bibliothèque apparaître dans la liste des réponses.</p>
+                    
+                <h2>Recherchez</h2>
+                    <p>La fonction de recherche a deux aspects :
+                        La recherche dans vos bibliothèques d'un livre particulier ou de livres ayant cet auteur ou cet éditeur.
+                        La recherche dans toutes les bibliothèques d'un livre particulier ou de livres ayant cet auteur ou cet éditeur avec en plus, 
+                        les critères de tri permettant de sélectionner uniquement les livres ayant un commentaire personnel ou/et les livres mis en vente.</p>
+                <h2>Correspondez</h2>
+                    <p>La fonction de messages est liée uniquement à l'achat de livres en vente dans les bibliothèques visitées. 
+                        Les livres à vendre que vous avez sélectionnés apparaissent dans l'onglet "messages", "envoyez des messages". 
+                        Remplissez la zone de commentaire et envoyez le message. 
+                        Votre correspondant recevra une notification ainsi que le message avec la liste des livres et votre commentaire. 
+                        Vous pourrez échanger pour mettre au point les termes de la transaction (prix avec l'expédition , moyen de paiement etc.).
+                        Le développeur de l'application n'intervient pas dans la transaction commerciale et ne perçoit aucune rémunération sur vos transactions.
+                        Pour chaque message il y un bouton "Reporter un abus" qui permet à l'administrateur d'intervenir si vous estimez que des propos sont inappropriés.</p>
+                <h2>Mémoriser</h2>
+                    <p>La fonction liste de prêts sert de mémo. Elle vous permet de noter en regard de chaque livre à qui et quand vous l'avez prêté ainsi que ses coordonnées téléphoniques. 
+                        Lorsque vous saisissez un livre comme prêté, si ce livre est dans votre bibliothèque, une icône "I" apparaît en regard du livre.</p>
+        
+      </div>
+      <div id="phone" class="jumbotron peer">
+          <h2>APERCU TELEPHONE</h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="beforeul">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="img-responsive" src="img/tel/MRaccueil.png" alt="Accueil">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tel/MRedit1.png" alt="Edition">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tel/MRedit2.png" alt="Edition" >
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tel/MRvisit.png" alt="Liste" >
+                    </div>
+                  </div>
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                  </ol>
+              </div>
+            </div>
+                 
+        </div>
+          <div class="col-xs-12 col-md-6">
+              <div class="custom">
+                <h2>Phone </h2>
+                <p>L'objet de cette application est de vous permettre de classer vos livres, de récupérer les images des couvertures, de vendre vos livres, de partager vos commentaires personnels sur vos livres, de consulter les bibliothèques d'autres utilisateurs, de voir leurs éventuels commentaires, d'acheter des livres d'occasion, de consulter des sites de vente, de lister vos prêts de livres, de noter des livres dans votre liste de lecture.</p>
+                <p>Créer classer vos livres, de récupérer les images des couvertures, de vendre vos livres, de partager vos commentaires personnels sur vos livres, de consulter les bibliothèques d'autres utilisateurs, de voir leurs éventuels commentaires, d'acheter des livres d'occasion, de consulter des sites de vente, de lister vos prêts de livres, de noter des livres dans votre liste de lecture.</p>
+                <div class="col-xs-6 col-md-6">
+                    <a href='https://play.google.com/store/apps/details?id=com.artepole.biblioApp&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                        <img class="paple img-responsive" alt='Get it on iTunes' src='img/Download_on_the_App_Store_Badge_FR_RGB_blk_100517.svg'/>                        
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <a href='https://play.google.com/store/apps/details?id=com.artepole.biblioApp&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                        <img class="img-responsive" alt='Get it on Google Play' src='img/google-play-badge.png'/>
+                    </a>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tablet" class="jumbotron">
+        <h2>APERCU TABLETTE</h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="beforeultab">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                      <img class="img-responsive" src="img/tab/ACCUEIL.png" alt="Accueil">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tab/list.png" alt="Accueil">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tab/edit1.png" alt="Edition">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tab/edit2.png" alt="Accueil">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tab/visit1.png" alt="Edition">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tab/visit2.png" alt="Accueil">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tab/visit3.png" alt="Edition">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tab/readlist.png" alt="Accueil">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tab/pret.png" alt="Edition">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tab/msg.png" alt="Accueil">
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/tab/search.png" alt="Edition">
+                    </div>
+                    
+                  </div>
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators indictab">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                    <li data-target="#myCarousel" data-slide-to="8"></li>
+                    <li data-target="#myCarousel" data-slide-to="9"></li>
+                    <li data-target="#myCarousel" data-slide-to="10"></li>
+                  </ol>
+              </div>
+            </div>
+                 
+        </div>
+          <div class="col-xs-12 col-md-6">
+              <div class="custom">
+                <h2>Phone </h2>
+                <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.<br>
+                </p>
+                <div class="col-xs-6 col-md-6">
+                    <a href='https://play.google.com/store/apps/details?id=com.artepole.biblioApp&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                        <img class="paple img-responsive" alt='Get it on iTunes' src='img/Download_on_the_App_Store_Badge_FR_RGB_blk_100517.svg'/>                        
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <a href='https://play.google.com/store/apps/details?id=com.artepole.biblioApp&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                        <img class="img-responsive" alt='Get it on Google Play' src='img/google-play-badge.png'/>
+                    </a>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="help" class="jumbotron peer">
+        <h2>AIDE</h2> 
+        <div id="signin" class="jumbotron">
+          <h3>ENREGISTREMENT</h3>
+          <p>A l'installation de l'application, vous devez vous enregistrer pour générer une clé sécurisée ce qui permet d'avoir une connexion sécurisée avec le serveur.Cette connexion permet d'effectuer les recherches ISBN, de consulter les bibliothèques publiques des autres utilisateurs, de leur envoyer des messages à propos des livres qu'ils ont mis en vente et d'en recevoir. Elle vous permet aussi de récupérer vos données si vous devez réinstaller l'application lors d'un changement de téléphone ou d'un crash.<br>
+			Lors de l'enregistrement les champs 'pseudonyme', 'email', 'mot de passe' et 'réponse à une question secrète' sont obligatoires. (L'adresse email doit être valide pour récupérer votre mot de passe en cas d'oubli ou récupérer vos données en cas de changement d'appareil ou de réinstallation). Les champs 'Nom', 'Prénom', et 'Présentation' sont facultatifs, ils servent à renseigner votre profil lorsqu'un autre utilisateur visite votre bibliothèque publique et lui permettent de voir votre note de popularité ainsi que le nombre de visites sur votre bibliothèque, le nombre de livres qu'elle contient etc...( voir le paragraphe Bibliothèque pour plus de détails).</p>
+        </div>
+        <div id="login" class="jumbotron peer">
+          <h3>LOGIN</h3>
+          <p>La clé de sécurité qui est générée a une durée de validité, à chaque fois que cette durée expire, il vous est demandé de vous logger à nouveau. Il peut aussi vous être demandé de vous relogger parce que la clé à été corrompue (si vous êtes victime d'une attaque). Cette clé permet de vous identifier comme utilisateur unique de l'application. <br> 
+              Vous pouvez aussi vous logger pour accéder à votre profil, le modifier ou changer de mot de passe. Si vous avez oublié votre mot de passe, une fois que vous aurez répondu à votre question secrète, vous recevrez un email avec votre nouveau mot de passe.</p>
+        </div>
+        <div id="biblio" class="jumbotron">
+          <h3>BIBLIOTHEQUE</h3>
+          <p>Il y a deux bibliothèques, une est publique , l'autre est privée. <br>
+              La bibliothèque publique est visitable par les autres utilisateurs qui peuvent voir les livres que vous y avez mis avec vos commentaires personnels. <br>
+              Si vous avez mis des livres en vente, ils peuvent les acheter. La bibliothèque privée n'est consultable que par vous. <br>
+              Les données de la bibliothèque publique (nombre de visites) et les données de votre qualification sont mises à jour à chaque fois que vous consultez l'application.</p><br>
+          <h4>Catégories</h4>
+          <p>Par défaut une catégorie est créée dans chaque bibliothèque. <br>
+              Vous pouvez en ajouter autant que vous le souhaitez, les renommer, les effacer en conservant les livres qui y sont inclus ou en les effacant aussi, vous pouvez les déplacer d'une bibliothèque à l'autre, à l'exception de la catégorie par défaut qui ne peut être effacée.</p>
+        </div>
+        <div id="add" class="jumbotron peer">
+          <h3>AJOUTER UN LIVRE</h3>
+          <p>Vous pouvez ajouter un livre de 4 manières différentes.</p><br>
+          <p>Scan unique.<br>
+              Vous scannez le numéro ISBN d'un livre et l'application va récupérer les données sur le serveur pour les afficher.</p><br>
+          <p>Scan multiple.<br>
+            Vous scannez plusieurs livres, à chaque scan le numéro ISBN s'affiche. <br>
+            Lorsque vous avez fini de scanner vos livres, vous lancez la recherche et chaque ISBN va récupérer les données et les afficher au fur et à mesure.</p><br>
+          <p>Entrée manuelle du numéro ISBN.<br>
+            Le process est identique à un scan simple.</p><br>
+          <p>Entrée manuelle"<BR>
+            Vous pouvez entrer les données d'un livre manuellement y compris une couverture (prise avec l'appareil photo ou dans votre galerie)</p><br>
+          <p>Détails d'un livre<br>
+              Les données récupérées sont toutes modifiables sauf le numéro ISBN et le sommaire.<br>
+              Pour la couverture vous pouvez remplacer l'image par une photo ou par une image prise dans votre galerie. <br>
+              Concernant l'avis et le commentaire personnel, le fait d'ajouter un commentaire et de noter le livre vous octroie une qualification supplémentaire visible par les autres utilisateurs. <br>
+              Si vous désirez vendre ce livre, indiquez-le ainsi que son prix de vente et la monnaie de transaction. Lors d'une visite, un autre utilisateur pourra vous contacter par l'intermédiaire de l'application pour conclure avec vous les modalités de la transaction.(L'application n'intervient pas dans la transaction commerciale entre les utilisateurs).</p><br>
+          <p>Liste des livres<br>
+	La liste vous permet d'effacer, d'éditer pour modifier ou de changer l'affichage (liste ou détails).</p>
+        </div>
+        <div id="search" class="jumbotron">
+          <h3>RECHERCHE</h3>
+          <p>La recherche se divise en deux onglets.<br>
+              Onglet 1: Vous permet de rechercher un livre ou des livres dans vos bibliothèques par l'intermédiaire d'un titre, d'un auteur, d'un éditeur ou d'un numéro ISBN que vous pouvez scanner.<br>
+	Onglet 2: Vous permet de rechercher dans toutes les bibliothèques publiques des autres utilisateurs avec les mêmes critères et en plus de sélectionner seulement les livres qui ont un commentaire personnel ou/et qui sont en vente.</p>
+        </div>
+        <div id="visit" class="jumbotron peer">
+          <h3>VISITE</h3>
+          <p>Vous pouvez visiter les bibliothèques publiques des autres utilisateurs de trois manières différentes: <br>
+              les bibliothèques les plus populaires, les bibliothèques qui ont le plus de livres en commun avec votre bibliothèque, les bibliothèques qui ont des livres classés avec l'attribut choisi dans la liste. Lorsque vous ajoutez une bibliothèque publique à vos bibliothèques favorites, cela augmente la qualification du créateur de la bibliothèque. <br>
+              Bibliothèques les plus populaires.<br>
+              La popularité des bibliothèques est fonction du nombre de fois où elles ont été visitées.<br>
+              Bibliothèques qui ont le plus de livres en commun avec votre bibliothèque<br>
+              Comme l'indique le titre, les bibliothèques affichées lors de cette recherche sont celles qui ont le plus de livres en commun avec votre bibliothèque, sans autre critère<br>
+              Bibliothèques qui ont des livres classés avec l'attribut choisi dans la liste<br>
+		De la même manière, lorsque vous entrez un livre dans votre bibliothèque publique vous pouvez lui affecter un attribut particulier dans la liste proposée, par défaut l'attribut est 'ROMAN'. C'est cet attribut qui sert de critère de recherche pour cette visite spécifique.</p>
+        </div>
+    <div id="list" class="jumbotron ">
+          <h3>LISTE de LECTURE</h3>
+          <p>Dans l'onglet Liste de Lecture s'affiche les livres que vous avez sélectionnés lors de vos visites et de vos recherches par l'intermédiaire du bouton 'Ajouter à la liste de Lecture'. <br>Un appui sur l'intitulé 'Recommandé par Xxx' vous permet de voir les données de l'utilisateur et les caractéristiques de la bibliothèque. <br>Le bouton 'Visiter' vous permet de retourner à la bibliothèque déjà visitée.<br>
+			Vous pouvez ajouter un livre manuellement à votre liste de lecture en renseignant le formulaire.</p>
+        </div>
+    <div id="loaning" class="jumbotron peer">
+          <h3>PRÊT</h3>
+          <p>Lorsque vous prêtez un livre vous pouvez l'enregistrer dans la liste en renseignant le formulaire. <br>
+              Si ce livre est dans vos bibliothèques, une icône (I) apparaîtra à côté du livre lorsque que vous consulterez votre bibliothèque.</p>
+        </div>
+    <div id="favori" class="jumbotron ">
+          <h3>FAVORIS</h3>
+          <p>C'est dans cet onglet que sont listées les bibliothèques que vous avez ajoutées à vos favoris. <br>
+              Le lien sur le Nom vous permet de consulter les données du propriétaire de la bibliothèque mise à jour à chaque fois que vous consultez l'application. <br>
+              Le bouton 'Visiter' vous ramène sur la bibliothèque concernée.</p>
+    </div>
+    <div id="msg" class="jumbotron peer">
+          <h3>MESSAGES</h3>
+          <p>Cet onglet comprend deux parties.<br>
+	Première partie: Envoyer des messages. A chaque fois que vous visitez un bibliothèque et que vous sélectionnez un livre mis en vente par le propriétaire de cette bibliothèque, cela crée une entrée dans les messages à envoyer. <br>
+        En selectionnant cette entrée vous ouvrez un formulaire où apparaîssent : le ou les livres qui ont été sélectionnés, leur prix de vente, un espace commentaire et des champs à renseigner pour que le vendeur calcule le prix de vente avec la livraison. <br>
+        Lorsque vous envoyez le message, le correspondant reçoit une notification sur son téléphone lui indiquant qu'une personne lui a envoyé un message sur l'application. <br>
+        Ces messages seront chargés lorsqu'un utilisateur ouvrira l'application, ils seront visibles dans l'onglet 'MESSAGES'.<br>
+	Deuxième partie: Lire les messages. Lorsque vous envoyez un message à un nouvel utilisateur ou recevez pour la première fois un message d'un nouvel utilisateur, cela crée une nouvelle file de discussion dans la partie 'Lire les messages'. <br>
+        Vous pouvez ouvrir cette file et lire les messages afférents ou répondre si on vous a adressé un message. <br>
+        l'objectif de cet échange de message est de convenir d'un prix pour la transaction. <br>
+        Vous pouvez clore une file quand vous le voulez. Vous pouvez aussi signaler un abus à propos d'un contenu inapprorpié.</p>
+        </div>
+    <div id="sub" class="jumbotron ">
+          <h3>ABONNEMENT</h3>
+          <p>Détails de l'abonnement : après une période d'essai gratuit de 30 jours, les fonctionnalités suivantes sont accessibles avec un abonnement annuel.<br>
+              Visite: l'onglet Visite des bibliothèques publiques de tous les autres utilisateurs permet d'accéder aux commentaires personnels et aux livres mis en vente.<br>
+              Recherche: l'onglet Recherche dans toutes les bibliothèques permet de faire une recherche à partir d'un numéro ISBN, d'un titre, d'un auteur ou d'un éditeur dans toutes les bibliothèques publiques des autres utilisateurs.<br>
+              Message: l'onglet Message permet d'échanger avec les autres utilisateurs à propos des livres qu'ils ont mis en vente ou de ceux que vous avez mis en vente.<br>
+      Les autre fonctionnalités de l'application seront toujours gratuites (Vos bibliothèques (catégories, liste de livres), le scanner pour les code ISBN, la liste de lecture, la liste de prêts de livres).</p>
+        </div>
+      </div>
+    </div> <!-- /container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
